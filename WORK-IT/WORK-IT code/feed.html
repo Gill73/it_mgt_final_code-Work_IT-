@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://kit.fontawesome.com/6679ac0d1b.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WorkIT</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+   <div class="nav-left">
+      <img src="images/Logo.png" class="logo">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="apply.html">Apply</a></li>
+      </ul>
+   </div>
+   
+   <div class="nav-right">
+      <div class="search-box">
+      <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+      <img src="images/wanda_profilepic.jpeg" alt="">
+      </div>
+      
+   </div>
+<!--setting menu-->
+   <div class="settings-menu">
+
+      <div id="dark-btn">
+         <span></span>
+      </div>
+      <div class="settings-menu-inner">
+         <div class="user-profile">
+            <img src="images/wanda_profilepic.jpeg">
+            <div class="words-settings">
+               <p >Wanda Maximoff</p>
+               <a href="#">View your profile</a>
+            </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+            <img src="images/gigs.png">
+            <div class="words-settings">
+               <p>Your On-going Gigs</p>
+               <a href="#">View Gigs</a>
+            </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+            <img src="images/applications.png">
+            <div class="words-settings">
+               <p>Your Applications</p>
+               <a href="#">View Status</a>
+            </div>
+         </div>
+         <hr>
+         <div class="setting-links">
+            <img src="images/setting.png" class="settings-icon">
+            <a href="#">Settings <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/help me.png" class="settings-icon">
+            <a href="#">Help & Support <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/display-night.png" class="settings-icon">
+            <a href="#">Display <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/logout-gill.png" class="settings-icon">
+            <a href="#">Log-out <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+      </div>
+   </div>
+</nav>
+
+<div class="container">
+<!--Left sidebar content-->
+   <div class="left-sidebar">
+      <div class="imp-links">
+         <a href="#">Latest News</a>
+         <a href="#">Friends</a>
+         <a href="#">Apply for Gigs</a>
+         <a href="#">Discover Talent</a>
+         <a href="#">See More</a>
+      </div>
+      <div class="shortcut-links">
+      <p>Your Shortcuts</p>
+      <a href="#"><img src="images/slider2.jpg"> Jobs</a>
+      <a href="#"><img src="images/slider1.jpg">Completion Progress</a>
+      <a href="#"><img src="images/slider3.jpg">Project Timeline</a>
+      <a href="#"><img src="images/slider4.jpg">Your Applications</a>
+      <a href="#"><img src="images/slider5.jpg">Your Projects</a>
+      </div>
+   
+   </div>
+<!--Main  content-->
+<div class="main-content">
+
+      <div class="story-gallery">
+      <div class="story story1">
+      <img src="images/images/upload.png">
+      <p>Post a story</p>
+      </div>
+      <div class="story story2">
+         <img src="images/monica.jpeg">
+         <p>Monica</p>
+      </div>
+      <div class="story story3">
+         <img src="images/henrika.jpeg">
+         <p>Henrika</p>
+      </div>
+      <div class="story story4">
+         <img src="images/anna.jpeg">
+         <p>Anna</p>
+      </div>
+      <div class="story story5">
+         <img src="images/wanda_profilepic.jpeg">
+         <p>Wanda 838</p>
+      </div>
+   </div>
+
+
+   <div class="write-post-container">
+      <div class="user-profile">
+         <img src="images/wanda_profilepic.jpeg" alt="">
+         <div>
+            <p>Wanda Maximoff</p>
+            <small>Public <i class="fa-solid fa-sort-down"></i></small>
+         </div>
+      </div>
+
+      <div class="post-input-container">
+         <textarea rows="4" placeholder="What's on your mind, Wanda?" class="placeholder-input"></textarea>
+         <div class="add-post-links">
+            <a href="#"><img src="images/images/live-video.png" alt="">Live Video</a>
+            <a href="#"><img src="images/images/photo.png" alt="">Photo/Video</a>
+            <a href="#"><img src="images/images/feeling.png" alt="">Feeling/Activity</a>
+         </div>
+      </div>
+   </div>
+   <!--First Post-->
+   <div class="post-container">
+      <div class="post-row">
+         <div class="user-profile">
+            <img src="images/wanda_profilepic.jpeg" alt="">
+            <div>
+               <p>Wanda Maximoff</p>
+               <span>May 28, 2022, 8:00am</span>
+            </div>
+         </div>
+         <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+      
+      <p class="post-text">Apply for Website Development! Here at the <span> Wanda Vision Company </span>, we are currently looking for Front-end and Back-end developers to help us build our Avengers Recruitment page. 
+      <a href="#">#NewAvengers</a>
+      <a href="#">#Multiverse_of_Madness</a></p>
+      <img src="images/images/feed-image-1.png" class="post-img">
+
+      <div class="post-row">
+         <div class="activity-icons">
+            <div><img src="images/images/like-blue.png" >3,000</div>
+            <div><img src="images/images/comments.png" >45</div>
+            <div><img src="images/images/share.png" >89</div>
+
+
+         </div>
+         <div class="post-profile-icon">
+            <img src="images/wanda_profilepic.jpeg"> <i class="fa-solid fa-caret-down"></i>
+
+
+         </div>
+
+      </div>
+
+
+   </div>
+   <!--Second Post-->
+
+   <div class="post-container">
+      <div class="post-row">
+         <div class="user-profile">
+            <img src="images/images/member-1.png" alt="">
+            <div>
+               <p>Becky Anderson</p>
+               <span>May 21, 2022, 6:30pm</span>
+            </div>
+         </div>
+         <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+      
+      <p class="post-text"> Hanging out with my team members by the beach! I super loved the opportunity in meeting my junior freelancers,<span>  Camille Go and Cara Gutierrez </span>! We just finished our latest project for Ilagan industries and it's time to celebrate with some food, drinks and music!
+      <a href="#">#SitBackandRelax</a>
+      <a href="#">#BeachinWiththeTeam</a></p>
+      <img src="images/images/feed-image-2.png" class="post-img">
+
+      <div class="post-row">
+         <div class="activity-icons">
+            <div><img src="images/images/like-blue.png" >200</div>
+            <div><img src="images/images/comments.png" >90</div>
+            <div><img src="images/images/share.png" >10</div>
+
+
+         </div>
+   </div>
+         <!--Third Post-->
+      
+      </div>
+      <div class="post-container">
+         <div class="post-row">
+            <div class="user-profile">
+               <img src="images/images/member-9.png" alt="">
+               <div>
+                  <p>Karl Gonzales</p>
+                  <span>May 24, 2022, 5:00pm</span>
+               </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+         </div>
+         
+         <p class="post-text">I would like to thank my mentors, <span>Gillian Lu and Wanda Maximoff</span>  from the <span> Wanda Vision Company </span>, we are currently discussing our latest project for our client,SHIELD! I am very excited for this!
+         <a href="#">#ProjectManagement</a></p>
+         <img src="images/images/feed-image-5.png" class="post-img">
+   
+         <div class="post-row">
+            <div class="activity-icons">
+               <div><img src="images/images/like-blue.png" >254</div>
+               <div><img src="images/images/comments.png" >25</div>
+               <div><img src="images/images/share.png" >19</div>
+   
+   
+            </div>
+            <div class="post-profile-icon">
+               <img src="images/wanda_profilepic.jpeg"> <i class="fa-solid fa-caret-down"></i>
+   
+   
+            </div>
+   
+         </div>
+   
+   
+      </div>
+   <button type="button" class="load-more-btn">Load More</button>
+
+</div>
+
+<!--Right sidebar content-->
+<div class="right-sidebar">
+
+      <div class="sidebar-title">
+      <h4>In-demand Gigs</h4>
+      <a href="#">See All</a>
+      </div>
+<!--in demand gig 1-->
+      <div class="gigs">
+         <div class="left-gig">
+         <h3>GO</h3>
+         <span><p>Industries</p></span>
+         </div>
+         <div class="right-gig">
+         <h4>Software Engineer</h4>
+         <p>Recruiter: Wanda Maximoff</p>
+         <a href="#">More info</a>
+         </div>
+      </div>
+<!--in demand gig 2-->
+      <div class="gigs">
+      <div class="left-gig">
+      <h3>LU</h3>
+      <span><p>Industries</p></span>
+      </div>
+      <div class="right-gig">
+      <h4>Graphic Designer </h4>
+      <p>Recruiter:Gillian Lu</p>
+      <a href="#">More info</a>
+      </div>
+      </div>
+
+<!--in demand gig 3-->
+   <div class="gigs">
+   <div class="left-gig">
+   <h3>CARA</h3>
+   <span><p>Company</p></span>
+   </div>
+   <div class="right-gig">
+   <h4>Front-End Developer </h4>
+   <p>Recruiter: Doctor Strange</p>
+   <a href="#">More info</a>
+   </div>
+   </div>
+<!--ads-->
+
+   <div class="sidebar-title">
+   <h4>Advertisement</h4>
+   <a href="#">x</a>
+   </div>
+   <img src="images/people_working3.jpeg" class="ads">
+
+   <div class="sidebar-title">
+   <h4>Conversation</h4>
+   <a href="#">Hide Chat</a>
+   </div>
+   <div class="online-list">
+   <div class="online">
+   <img src="images/cara.jpeg">
+   </div>
+   <p>Cara Gutierrez</p>
+   </div>
+
+   <div class="online-list">
+   <div class="online">
+   <img src="images/monica.jpeg">
+   </div>
+   <p>Monica Gomos</p>
+   </div>
+
+   <div class="online-list">
+   <div class="online">
+   <img src="images/julia.jpeg">
+   </div>
+   <p>Julia Quijano</p>
+   </div>
+
+   <div class="online-list">
+      <div class="online">
+      <img src="images/camille.jpeg">
+      </div>
+      <p>Camille Go</p>
+      </div>
+
+   </div>
+
+</div>
+
+<div class="footer">
+   <p>Copyright 2022 - WorkIT Philippines</p>
+</div>
+
+<!--Java portion-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

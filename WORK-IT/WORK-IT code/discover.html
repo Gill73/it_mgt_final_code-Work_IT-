@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://kit.fontawesome.com/6679ac0d1b.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home Page - Work It</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+   <div class="nav-left">
+      <img src="images/Logo.png" class="logo">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="apply.html">Apply</a></li>
+      </ul>
+   </div>
+   
+   <div class="nav-right">
+      <div class="search-box">
+      <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+      <img src="images/wanda_profilepic.jpeg" alt="">
+      </div>
+      
+   </div>
+<!--setting menu-->
+   <div class="settings-menu">
+
+      <div id="dark-btn">
+         <span></span>
+      </div>
+      <div class="settings-menu-inner">
+         <div class="user-profile">
+            <img src="images/wanda_profilepic.jpeg">
+            <div class="words-settings">
+               <p >Wanda Maximoff</p>
+               <a href="#">View your profile</a>
+            </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+            <img src="images/gigs.png">
+            <div class="words-settings">
+               <p>Your On-going Gigs</p>
+               <a href="#">View Gigs</a>
+            </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+            <img src="images/applications.png">
+            <div class="words-settings">
+               <p>Your Applications</p>
+               <a href="#">View Status</a>
+            </div>
+         </div>
+         <hr>
+         <div class="setting-links">
+            <img src="images/setting.png" class="settings-icon">
+            <a href="#">Settings <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/help me.png" class="settings-icon">
+            <a href="#">Help & Support <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/display-night.png" class="settings-icon">
+            <a href="#">Display <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+         <div class="setting-links">
+            <img src="images/logout-gill.png" class="settings-icon">
+            <a href="#">Log-out <img src="images/images/arrow.png" width="10px"></a>
+         </div>
+      </div>
+   </div>
+</nav>
+<!--search portion-->
+<div class="banner-text-center">
+   <h1>Discover Talent</h1>
+   <p>Recruit your team of freelancers or more. </p>
+</div>
+
+<div class="search-talent text-center">
+   <input type="text" class="form-control" placeholder="Search Industry">
+   <input type="text" class="form-control" placeholder="Skills Needed">
+   <input type="text" class="form-control" placeholder="Location">
+   <input type="button" class="btn btn-primary" value="Find talent">
+</div>
+
+<!--new talents portion-->
+<section id="talents-discover">
+   <h5>New Talents</h5>
+   <div class="container">
+      <div class="talent-details">
+         <div class="talent-update">
+            <h4><b>Seasoned Senior Full Stack Developer</b></h4>
+            <div class="star-rating">
+               <p>Gillian Nicole G. Lu</p>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div> 
+            <i class="fa-solid fa-business-time"></i><span>Experience: 3 years</span><br>
+            <i class="fa-solid fa-calendar-check"></i><span class="status-discover">Available for Recruitment</span><br>
+            <i class="fa-solid fa-map-location"></i><span>Pasig City, Philippines</span><br>
+            <i class="fa-solid fa-credit-card"></i><span>Rate: Php 20,000 - Php 40,000</span><br>
+            <p>Skills <i class="fa fa-angle-double-right"></i> <small>JavaScript</small><small>Python</small><small>HTML & CSS</small></p>
+            <p>Description <i class="fa fa-angle-double-right"></i>Hello, I'm Gillian Lu! I specialize in full stack development projects, but I am also talented in Project Management and Development. Connect with me!</p>
+            <a href="#">Read More</a>
+         </div>
+         <div class="recruit-btn">
+            <button type="button" class="btn btn-primary">
+               <a href="profile.html">Recruit</a>
+               </button>
+         </div> 
+      </div> 
+   </div>
+   <div class="container">
+      <div class="talent-details">
+         <div class="talent-update">
+            <h4><b>Front End Developer</b></h4>
+            <div class="star-rating">
+               <p>Monica Gomos</p>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div> 
+            <i class="fa-solid fa-business-time"></i><span>Experience: 1 years</span><br>
+            <i class="fa-solid fa-calendar-check"></i><span class="status-discover">Available for recruitment</span><br>
+            <i class="fa-solid fa-map-location"></i><span>Metro Manila, Philippines</span><br>
+            <i class="fa-solid fa-credit-card"></i><span> Rate: Php 10,000 - Php 20,000</span><br>
+
+            <p>Skills <i class="fa fa-angle-double-right"></i> <small>JavaScript</small><small>HTML & CSS</small></p>
+            <p>Description <i class="fa fa-angle-double-right"></i> I'm Monica Gomos and I am a fresh graduate from Ateneo de Manila University. I specialize in front-end development. Send me a message, if you're interested in my skills and abilities.</p>
+            <a href="#">Read More</a>
+         </div>
+         <div class="recruit-btn">
+            <button type="button" class="btn btn-primary">Recruit</button>
+         </div> 
+      </div> 
+   </div>
+   <div class="container">
+      <div class="talent-details">
+         <div class="talent-update">
+            <h4><b>Graphic Designer</b></h4>
+            <div class="star-rating">
+               <p>Julianne Ng</p>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div> 
+            <i class="fa-solid fa-business-time"></i><span>Experience: 3 years</span><br>
+            <i class="fa-solid fa-calendar-check"></i><span class="status-discover">Available for recruitment</span><br>
+            <i class="fa-solid fa-map-location"></i><span>Quezon City, Metro Manila, Philippines</span><br>
+            <i class="fa-solid fa-credit-card"></i><span>Rate: Php 15,000 - Php 25,000</span><br>
+
+            <p>Skills <i class="fa fa-angle-double-right"></i> <small>Photoshop</small><small>Illustrator</small><small>Lightroom</small></p>
+            <p>Description <i class="fa fa-angle-double-right"></i> I'm Julianne Ng and I am a graphic designer who specializes in illustration and photo manipulation. I have worked on multiple projects before and have been successful in all. Connect with me, if you're interested in recruiting.</p>
+            <a href="#">Read More</a>
+         </div>
+         <div class="recruit-btn">
+            <button type="button" class="btn btn-primary">Recruit</button>
+         </div> 
+      </div> 
+   </div>
+   <ul class="page-link text-center">
+      <li class="left-arrow">&#8592;</li>
+      <li class="active">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li class="right-arrow">&#8594;</li>
+   </ul>
+   
+</section>
+
+<div class="footer">
+   <p>Copyright 2022 - WorkIT Philippines</p>
+</div>
+
+<!--Java portion-->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
